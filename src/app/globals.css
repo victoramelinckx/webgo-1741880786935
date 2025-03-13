@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+  h1 {
+    @apply text-[36px] md:text-[65px] font-bold leading-[100%] font-figtree;
+  }
+  h2 {
+    @apply text-[35px] md:text-[58px] font-bold font-figtree;
+  }
+  h3 {
+    @apply text-[25px] md:text-[45px] font-bold font-figtree;
+  }
+  h4 {
+    @apply text-[18px] md:text-[35px] font-medium font-figtree;
+  }
+  h5 {
+    @apply text-[16px] md:text-[26px] font-medium font-figtree;
+  }
+  p {
+    @apply text-[16px] md:text-[18px] leading-6;
+  }
+  section {
+    @apply px-6 md:px-10;
+  }
+}
+
+#gradient-canvas {
+  --gradient-color-1: #0e91ae;
+  --gradient-color-2: #66c5e2;
+  --gradient-color-3: #41badf;
+  --gradient-color-4: #25c5f5;
+}
