@@ -1,0 +1,10 @@
+# Archivos y carpetas a ignorar
+node_modules
+.next/cache
+.env.local
+.env.development
+dist
+build
+coverage
+__tests__
+.next
