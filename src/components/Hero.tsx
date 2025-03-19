@@ -74,8 +74,8 @@ export const Hero = ({ headline, subheadline, cta1 }: HeroProps) => {
           </div>
         </div>
       </div>
-      <div className="relative h-[850px] w-full">
-        <div className="bottom-0 h-[850px] left-[calc(50%-100%/2)] mix-blend-multiply overflow-hidden absolute w-full z-0">
+      <div className="relative h-[458px] lg:h-[850px] w-full">
+        <div className="bottom-14 lg:bottom-0 h-[458px] lg:h-[850px] left-[calc(50%-100%/2)] mix-blend-multiply overflow-hidden absolute w-full z-0">
           <video
             src="https://framerusercontent.com/assets/4DdEt8DwOWgsF6p0pTM6ssx40Q.mp4"
             loop

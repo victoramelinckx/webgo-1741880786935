@@ -27,11 +27,11 @@ export const Beneficio = ({
   return (
     <Element
       name="funcionamiento"
-      className="w-full flex flex-col justify-center bg-black py-28"
+      className=" w-full flex flex-col justify-center bg-black py-14 px-6 lg:py-28"
     >
-      <div className="flex max-w-6xl w-full mb-20 mx-auto">
+      <div className="flex max-w-6xl w-full mb-10 lg:mb-20 mx-auto">
         {" "}
-        <h3 className=" text-center font-semibold text-[56px] text-white leading-[120%] tracking-tighter">
+        <h3 className=" text-center font-semibold text-[30px] lg:text-[56px] text-white leading-[120%] tracking-tighter">
           We passed <span className=" text-[#FFC670]">Google</span> and{" "}
           <span className=" text-[#FFC670]">Yelp</span> mover screening and
           qualification processes. Our customers are{" "}
@@ -40,7 +40,7 @@ export const Beneficio = ({
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[80px] gap-y-[40px] mx-auto max-w-6xl">
         {/* Item1 */}
-        <div className="flex items-start space-x-4 max-w-lg">
+        <div className="flex max-md:flex-col items-start max-md:gap-4 md:space-x-4 max-w-lg">
           <div className="text-[#356dff] text-3xl">
             <GiAlliedStar className="w-10 h-auto text-[#356dff]" />
           </div>
@@ -56,7 +56,7 @@ export const Beneficio = ({
           </div>
         </div>
         {/* Item2 */}
-        <div className="flex items-start space-x-4">
+        <div className="flex max-md:flex-col items-start max-md:gap-4 md:space-x-4 max-w-lg">
           <div className="text-[#356dff] text-3xl">
             <FaCalculator className="w-10 h-auto text-[#356dff]" />
           </div>
@@ -72,7 +72,7 @@ export const Beneficio = ({
           </div>
         </div>
         {/* Item3 */}
-        <div className="flex items-start space-x-4">
+        <div className="flex max-md:flex-col items-start max-md:gap-4 md:space-x-4 max-w-lg">
           <div className="text-[#356dff] text-3xl">
             <AiFillSafetyCertificate className="w-10 h-auto text-[#356dff]" />
           </div>
@@ -86,7 +86,7 @@ export const Beneficio = ({
           </div>
         </div>
         {/* Item4 */}
-        <div className="flex items-start space-x-4">
+        <div className="flex max-md:flex-col items-start max-md:gap-4 md:space-x-4 max-w-lg">
           <div className="text-[#356dff] text-3xl">
             <FaWallet className="w-10 h-auto text-[#356dff]" />
           </div>
