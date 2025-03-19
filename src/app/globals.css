@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans;
+    @apply font-figtree;
   }
   h1 {
     @apply text-[36px] md:text-[65px] font-bold leading-[100%] font-figtree;
@@ -23,9 +23,6 @@
   }
   p {
     @apply text-[16px] md:text-[18px] leading-6;
-  }
-  section {
-    @apply px-6 md:px-10;
   }
 }
 

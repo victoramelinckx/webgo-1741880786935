@@ -95,7 +95,7 @@ export const Navbar = ({ displayMode }: { displayMode?: string }) => {
 
 const NavbarTop = ({ children }: { children: ReactNode }) => {
   return (
-    <nav className="absolute z-50 flex justify-center items-center transition-all duration-700 w-full h-28 mt-16 bg-transparent text-white">
+    <nav className="absolute z-50 flex justify-center border border-black/10 border-b-1 items-center transition-all duration-700 w-full h-24 mt-16 bg-transparent text-black">
       {children}
     </nav>
   );
@@ -133,7 +133,7 @@ const NavbarContent = ({
     <div
       className={`flex justify-between ${
         isScrollNav ? "h-[4.5rem]" : "h-24"
-      } w-full max-w-6xl mx-6 md:mx-14`}
+      } w-full max-w-7xl mx-6 md:mx-14`}
     >
       <div className="flex gap-4">
         <button
@@ -147,8 +147,10 @@ const NavbarContent = ({
             } transition-all duration-700 h-auto`}
             alt="Carpos y Lagos Constructora."
           /> */}
-          <p className="font-bold text-3xl">LOGO</p>
+          <p className="font-bold text-4xl">LOGO</p>
         </button>
+      </div>
+      <div className="flex items-center justify-center gap-4">
         <ul
           className={`flex flex-col lg:flex-row max-lg:hidden lg:items-center absolute lg:static opacity-[1] transition-all duration-700 font-medium text-center lg:-mr-5
           ${isScrollNav && "text-sm"}`}
@@ -204,13 +206,14 @@ const NavbarContent = ({
           isScrollNav ? "h-[4.5rem]" : "h-24"
         } flex items-center gap-6`}
       >
-        <a
+        {/* Numero de Telefono */}
+        {/* <a
           className="flex gap-1 items-center max-xl:hidden font-semibold text-white text-lg transition-all ease-in-out duration-300 hover:-translate-y-1"
           href="https://api.whatsapp.com/send/?phone=7866431006&text=Hi%20I%20would%20like%20to%20get%20a%20quote%F0%9F%98%83"
         >
           <img src="icons/phonewhite.svg" className="w-5 mr-1" />
           +56 41 3213140
-        </a>
+        </a> */}
 
         {pathname === "/" ? (
           <ScrollLink

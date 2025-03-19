@@ -10,13 +10,17 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { Element } from "react-scroll";
 
+type BeforeAndAfterProps = {
+  subheadline: string;
+};
+
 // Interface for carousel data
 type CarouselDataType = {
   Image: string;
   tratamiento: string;
 };
 
-export const BeforeAndAfter = (subheadline: string) => {
+export const BeforeAndAfter = ({ subheadline }: BeforeAndAfterProps) => {
   // Static data with placeholder images and predefined treatment names
   const data: CarouselDataType[] = [
     {
@@ -57,7 +61,7 @@ export const BeforeAndAfter = (subheadline: string) => {
             {subheadline}
           </p>
         </div>
-        <div className="w-5/6 sm:w-11/12">
+        <div className="w-5/6 sm:w-11/12 max-w-7xl">
           <Carousel
             opts={{
               align: "start",

@@ -12,7 +12,7 @@ export const NavbarLink = ({ title, className, ...props }: NavbarLinkProps) => {
     <li className={cn("h-20 lg:h-full w-full", className)}>
       {/* @ts-ignore */}
       <Link
-        className="flex items-center px-3 lg:px-6 h-full hover:opacity-70 cursor-pointer justify-center font-semibold"
+        className="flex items-center text-[16px] px-3 lg:px-6 h-full hover:opacity-70 cursor-pointer justify-center font-medium"
         {...props}
       >
         {title}

@@ -6,6 +6,9 @@ import { Link } from "react-scroll";
 import { Button } from "./Button";
 import imagen from "../../public/vacio.jpg";
 import { BusinessInfo } from "./BusinessInfo";
+import { BookHero } from "./BookHero";
+import { FaStar } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 interface HeroProps {
   headline: string;
@@ -16,26 +19,22 @@ interface HeroProps {
 export const Hero = ({ headline, subheadline, cta1 }: HeroProps) => {
   return (
     <section
-      className="flex flex-col max-lg:pt-4 bg-[#1d65d1] relative 
-        bg-[linear-gradient(to_right,rgba(100,150,230,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(100,150,230,0.15)_1px,transparent_1px)] 
-        bg-[size:6rem_4rem] w-full justify-center items-center"
+      className="flex flex-col max-lg:pt-4 bg-white relative 
+         w-full justify-center items-center"
     >
-      {/* Radial gradient for the faded look */}
-      <div className="absolute inset-0 pointer-events-none flex items-center justify-center bg-[#1d65d1] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#1d65d1)]"></div>
-
-      <div className="flex flex-col pt-24  max-lg:gap-4 lg:flex-row items-center  max-w-6xl z-20">
-        <div className="flex flex-col">
+      <div className="relative flex max-md:flex-col max-md:gap-7 max-lg:px-6 justify-start w-full  pt-20 lg:pt-40 max-w-7xl z-20">
+        <div className="flex flex-col max-w-3xl md:mb-16">
           <div className="mt-2 ">
-            <h1 className="text-white font-bold text-[36px] max-md:text-center md:text-6xl max-lg:mt-4">
+            <h1 className="text-black font-semibold uppercase tracking-tight text-[36px] md:text-[64px] xl:text-[90px] max-lg:mt-4 leading-[115%]">
               {headline}
             </h1>
           </div>
           <div className="mt-6">
-            <p className="max-w-lg justify-start max-md:text-center text-[#CCCCCC]">
+            <p className="max-w-2xl justify-start font-medium tracking-normal text-[16px] leading-[170%]  text-[#333333]">
               {subheadline}
             </p>
           </div>
-          <div className="mt-8 flex flex-row space-x-6 max-md:justify-center">
+          <div className=" max-md:hidden mt-8 flex flex-row space-x-6">
             <Link to="contacto" smooth>
               <Button title={cta1} className=" max-lg:mb-4" />
             </Link>
@@ -57,78 +56,36 @@ export const Hero = ({ headline, subheadline, cta1 }: HeroProps) => {
             </Dialog> */}
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:h-full lg:w-[60%]">
-          <div className="w-full md:w-[37.5rem] aspect-[1.1091449814126393/1] flex flex-row gap-4 md:pt-8">
-            <div className="w-[35%] h-full as flex flex-col jus gap-4">
-              <div className="h-1/2 w-full flex justify-end items-end">
-                <div className="w-[65%] md:w-[55%] h-[75%] md:h-[65%] bg-[#84b0f281] rounded-[10px] flex flex-col justify-center items-center">
-                  {/* //icono */}
-                  <div className="w-2/5 h-[27%] xs:w-1/2 xs:h-1/3 bg-white/20 flex justify-center items-center rounded-full">
-                    <div className="w-[75%] h-[75%] bg-white flex justify-center items-center rounded-full">
-                      <img
-                        src="/vacio.jpg"
-                        alt="calendar"
-                        className="w-6 h-6"
-                      />
-                    </div>
-                  </div>
-                  <p className="text-white text-xs md:text-base leading-normal mt-2 text-center font-medium">
-                    Quick <br /> Availability
-                  </p>
-                </div>
-              </div>
-              <div className="w-full h-1/2 rounded-[16px] rounded-bl-[70px] overflow-hidden">
-                <Image
-                  src={imagen}
-                  alt=""
-                  className="w-full h-full object-cover rounded"
-                  priority
-                  placeholder="blur"
-                />
-              </div>
+        <div className="md:absolute md:right-0">
+          <div className="flex flex-col gap-8 justify-center h-full w-full">
+            <div className="flex flex-row items-center justify-center md:mt-20">
+              <FcGoogle className=" w-8 h-auto mr-2" />
+              <span className="text-lg font-bold text-black mr-2">4.7</span>
+
+              {[...Array(5)].map((_, i) => (
+                <FaStar key={i} className=" w-4 lg:w-6 fill-yellow-400 " />
+              ))}
+              <span className="ml-2 text-lg lg:text-2xl font-medium text-black">
+                +3200 Reviews
+              </span>
             </div>
-            <div className="w-[65%] h-full flex flex-col gap-4">
-              <div className="w-full h-[60%] rounded-[16px] rounded-tr-[70px] overflow-hidden">
-                <Image
-                  src={imagen}
-                  alt=""
-                  className="w-full h-full object-cover rounded"
-                  priority
-                  placeholder="blur"
-                />
-              </div>
-              <div className="w-full h-[40%] flex flex-row gap-4">
-                <div className="w-[60%] md:w-[70%] h-[60%] rounded-[10px] overflow-hidden">
-                  <Image
-                    src={imagen}
-                    alt=""
-                    className="w-full h-full object-cover rounded"
-                    priority
-                    placeholder="blur"
-                  />
-                </div>
-                <div className="w-[40%] md:w-[30%] h-[100%] md:h-[80%] rounded-[10px] bg-[#84b0f281] flex flex-col justify-center items-center">
-                  <div className="w-1/2 h-1/3 bg-white flex justify-center items-center rounded-full">
-                    <div className="w-[75%] h-[75%] bg-white flex justify-center items-center rounded-full">
-                      <img
-                        src="/vacio.jpg"
-                        alt="calendar"
-                        className="w-8 h-8"
-                      />
-                    </div>
-                  </div>
-                  <p className="text-white leading-normal text-xs md:text-base font-semibold mt-1 text-center">
-                    <span className=" font-bold text-lg md:text-3xl">250+</span>{" "}
-                    <br />
-                    Jobs <br /> Done
-                  </p>
-                </div>
-              </div>
-            </div>
+
+            <BookHero heading="GET A FREE QUOTE" />
           </div>
         </div>
       </div>
-      <BusinessInfo />
+      <div className="relative h-[850px] w-full">
+        <div className="bottom-0 h-[850px] left-[calc(50%-100%/2)] mix-blend-multiply overflow-hidden absolute w-full z-0">
+          <video
+            src="https://framerusercontent.com/assets/4DdEt8DwOWgsF6p0pTM6ssx40Q.mp4"
+            loop
+            playsInline
+            className="cursor-auto w-full h-full block object-cover object-center"
+          />
+        </div>
+      </div>
+
+      {/* <BusinessInfo /> */}
     </section>
   );
 };
