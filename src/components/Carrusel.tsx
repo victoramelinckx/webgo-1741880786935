@@ -38,7 +38,7 @@ export const Carrusel = () => {
       name="antes/despues"
       className="w-full overflow-hidden bg-white pb-2"
     >
-      <section className="flex flex-col pt-4 pb-10 justify-center items-center">
+      <section className="flex flex-col pt-4 mb-4 lg:pb-10 justify-center items-center">
         <div className="w-full mx-auto px-4">
           <Carousel
             plugins={[plugin.current]}

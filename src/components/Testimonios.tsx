@@ -55,27 +55,29 @@ export default function Testimonios() {
   ];
 
   return (
-    <section className="w-full py-20 ">
+    <section className="w-full py-16 max-lg:px-[20px] lg:py-20 ">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center text-center mb-10">
-          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl lg:text-6xl">
+          <h2 className="text-[36px] max-md:text-center font-semibold tracking-tight md:text-4xl lg:text-6xl">
             Why people love Moving
           </h2>
-          <div className="flex flex-row items-center justify-center mt-8">
-            <FcGoogle className=" w-12 h-auto mr-2" />
-            <span className="text-2xl font-bold text-black mr-2">4.7</span>
+          <div className="flex flex-row items-center justify-center mt-4 lg:mt-8">
+            <FcGoogle className=" w-8 lg:w-12 h-auto mr-2" />
+            <span className=" text-base lg:text-2xl font-bold text-black mr-2">
+              4.7
+            </span>
             <FaStar className="w-6 fill-yellow-400" />
             <FaStar className="w-6 fill-yellow-400" />
             <FaStar className="w-6 fill-yellow-400" />
             <FaStar className="w-6 fill-yellow-400" />
             <FaStar className="w-6 fill-yellow-400" />
-            <span className="ml-2 text-xl font-medium text-black">
+            <span className="ml-2 text-base lg:text-xl font-medium text-black">
               +3200 Reviews
             </span>
           </div>
         </div>
 
-        <div className="w-full mx-auto px-4">
+        <div className="w-full mx-auto lg:px-4">
           <Carousel
             plugins={[plugin.current]}
             opts={{
@@ -89,11 +91,11 @@ export default function Testimonios() {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem
                   key={index}
-                  className="pl-4 min-w-[550px] max-w-[550px] h-auto"
+                  className="pl-4 min-w-[300px] max-w-[300px] lg:min-w-[550px] lg:max-w-[550px] h-auto"
                 >
                   <Card className="bg-white shadow-md h-full">
-                    <CardContent className="p-6 md:p-8 flex flex-col ">
-                      <div className="flex mb-10 space-x-1">
+                    <CardContent className="p-6 max-lg:py-8 md:p-8 flex flex-col ">
+                      <div className="flex mb-6 lg:mb-10 space-x-1">
                         {[...Array(5)].map((_, i) => (
                           <FaStar
                             key={i}

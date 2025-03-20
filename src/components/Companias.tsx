@@ -11,16 +11,19 @@ interface CompaniasProps {
 
 export const Companias = ({ titulo, texto }: CompaniasProps) => {
   return (
-    <Element name="acerca" className="w-full flex justify-center">
+    <Element
+      name="acerca"
+      className="w-full flex justify-center overflow-hidden max-lg:px-6"
+    >
       <div className="my-6">
-        <section className="flex flex-col justify-center lg:items-stretch items-center py-10 max-h-max-[700px] gap-8 lg:gap-12 max-w-6xl">
+        <section className="flex flex-col justify-center lg:items-stretch items-center pt-10 lg:py-10 max-h-max-[700px] gap-8 lg:gap-12 max-w-6xl">
           <div>
-            <h3 className="text-[36px] max-w-xl font-semibold leading-tight text-center">
+            <h3 className="text-[36px] max-w-xl font-semibold leading-tight text-center ">
               {titulo}
             </h3>
           </div>
 
-          <div className="w-full flex gap-16 items-center justify-center">
+          <div className="w-full flex flex-col lg:flex-row gap-6 lg:gap-16 items-center justify-center">
             {/* <Image
               src={"/vacio.jpg"}
               alt=""

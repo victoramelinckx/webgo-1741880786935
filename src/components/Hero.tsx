@@ -20,7 +20,7 @@ export const Hero = ({ headline, subheadline, cta1 }: HeroProps) => {
   return (
     <section
       className="flex flex-col max-lg:pt-4 bg-white relative 
-         w-full justify-center items-center"
+         w-full justify-center items-center overflow-hidden"
     >
       <div className="relative flex max-md:flex-col max-md:gap-7 max-lg:px-6 justify-start w-full  pt-20 lg:pt-40 max-w-7xl z-20">
         <div className="flex flex-col max-w-3xl md:mb-16">

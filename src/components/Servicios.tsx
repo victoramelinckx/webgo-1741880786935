@@ -49,7 +49,7 @@ export const Servicios: React.FC<ServicesProps> = ({
       <section className="bg-black w-full flex flex-col justify-center items-center py-8 md:py-20">
         <div className="flex flex-col gap-6 items-center p-8 rounded-lg w-full max-w-7xl">
           <div className="flex flex-col items-center lg:mb-6 text-white">
-            <h3 className="max-md:text-[30px] max-md:mt-1 leading-tight max-w-xl text-center">
+            <h3 className="max-md:text-[36px] max-md:font-semibold max-md:mt-1 leading-tight max-w-xl text-center">
               {"We are more than just a moving company"}
             </h3>
           </div>

@@ -39,18 +39,18 @@ export const Footer = () => {
   return (
     <footer className="w-full px-6 pb-12 md:px-16 lg:px-24 ">
       <div className="bg-gradient-to-b from-gray-900/[0.09] to-transparent max-w-6xl mx-auto">
-        <div className="bg-blue-500 pt-[50px] pb-12 mb-20 flex flex-row items-center justify-center w-full max-w-6xl mx-auto rounded-t-xl">
-          <h3 className="text-white text-[48px] font-semibold">
+        <div className="bg-blue-500 pt-[50px] pb-12 mb-20 flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl mx-auto rounded-t-xl">
+          <h3 className="text-white text-[36px] lg:text-[48px] font-semibold max-lg:text-center max-lg:mb-4">
             {" "}
             Let's move with Moving
           </h3>
-          <div className="ml-3 w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center">
+          <div className="ml-3 w-20 h-20 bg-blue-700/60 rounded-full flex items-center justify-center">
             <FaArrowRight className="w-6 h-auto text-white" />
           </div>
         </div>
-        <div className="max-w-6xl mx-auto xl:px-8">
+        <div className="max-w-6xl mx-auto lg:px-8">
           {/* Top Section */}
-          <div className="flex flex-col md:flex-row justify-between items-start mb-12">
+          <div className="flex flex-col md:flex-row max-lg:px-4 justify-between items-start mb-12">
             {/* Logo and Subscribe Section */}
             <div className="mb-12 md:mb-0 md:max-w-sm">
               <a href="/" className="inline-block mb-6">

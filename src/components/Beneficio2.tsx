@@ -27,20 +27,22 @@ export const Beneficio2 = ({
   return (
     <Element
       name="funcionamiento"
-      className="w-full flex flex-col justify-center bg-white py-14"
+      className="w-full flex flex-col gap-10 lg:gap-36 justify-center bg-white py-6 max-lg:px-6 lg:py-14"
     >
-      <div className="flex max-w-7xl w-full mb-36 mx-auto">
+      <div className="flex max-w-7xl w-full mx-auto">
         {" "}
-        <h3 className=" text-start font-semibold text-[56px] text-black leading-[120%] tracking-tighter">
+        <h3 className=" text-start font-semibold text-[36px] md:text-[56px] text-black leading-[120%] tracking-tighter">
           We are providing secured & trusted moving service since 2006. Our goal
           is to provide the best experience of your moving.
         </h3>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[80px] gap-y-[40px] mx-auto max-w-7xl">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-[80px] gap-y-[40px] mx-auto max-w-7xl">
         {/* Item1 */}
-        <div className="flex flex-col items-start  max-w-lg">
-          <div className="mb-16">
-            <p className="text-[#356dff] text-[120px] font-normal">40M</p>
+        <div className="flex flex-col items-start gap-5 lg:gap-16  max-w-lg">
+          <div>
+            <p className="text-[#356dff] text-[36px] lg:text-[120px] font-normal">
+              40M
+            </p>
           </div>
 
           <div>
@@ -54,9 +56,11 @@ export const Beneficio2 = ({
           </div>
         </div>
         {/* Item2 */}
-        <div className="flex flex-col items-start  max-w-lg">
-          <div className="mb-16">
-            <p className="text-[#356dff] text-[120px] font-normal">15K+</p>
+        <div className="flex flex-col items-start gap-5 lg:gap-16 max-w-lg">
+          <div>
+            <p className="text-[#356dff] text-[36px] lg:text-[120px] font-normal">
+              15K+
+            </p>
           </div>
 
           <div>
@@ -68,9 +72,11 @@ export const Beneficio2 = ({
           </div>
         </div>
         {/* Item3 */}
-        <div className="flex flex-col items-start  max-w-lg">
-          <div className="mb-16">
-            <p className="text-[#356dff] text-[120px] font-normal">2K+</p>
+        <div className="flex flex-col items-start gap-5 lg:gap-16 max-w-lg">
+          <div>
+            <p className="text-[#356dff] text-[36px] lg:text-[120px]  font-normal">
+              2K+
+            </p>
           </div>
 
           <div>

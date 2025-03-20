@@ -193,12 +193,16 @@ const NavbarContent = ({
         } `}
       >
         <button
-          className="text-primary-500 transition-all duration-700"
+          className=" transition-all duration-700"
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
           }}
         >
-          {isMenuOpen ? <X /> : <Bars />}
+          {isMenuOpen ? (
+            <X scrolled={isScrollNav} />
+          ) : (
+            <Bars scrolled={isScrollNav} />
+          )}
         </button>
       </div>
       <div

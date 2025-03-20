@@ -27,15 +27,18 @@ export const Faq: React.FC<FaqProps> = ({ faqs = [] }) => {
         <section className="flex flex-col lg:flex-row justify-center lg:items-stretch items-center py-10 max-h-max-[700px] gap-8 lg:gap-12 max-w-6xl">
           <div className="w-full lg:w-1/2 h-full flex flex-col lg:sticky lg:top-24">
             <div>
-              <h2 className="lg:text-[48px] md:text-[32px] text-[28px] leading-tight font-bold max-lg:text-center">
-                Preguntas frecuentes
+              <h2 className="lg:text-[48px] md:text-[32px] text-[36px] leading-tight font-semibold max-lg:text-center">
+                Preguntas más frecuentes
               </h2>
-              <p className="pt-5 text-sm md:text-base text-gray-900/60 font-semibold max-lg:text-center">
+              <p className="pt-5 text-[20px] text-black leading-[170%] max-lg:text-center">
                 Resolvemos tus consultas, aclaramos dudas y te orientamos en
                 todos nuestros servicios.
               </p>
             </div>
-            <Link className="max-lg:self-center" href="/contacto">
+            <Link
+              className=" max-lg:hidden max-lg:self-center"
+              href="/contacto"
+            >
               <button className="mt-10 text-lg flex items-center gap-1 rounded-full bg-primary-500 px-5 py-3 text-black font-semibold w-fit hover:opacity-70">
                 Contáctenos
               </button>
@@ -46,7 +49,7 @@ export const Faq: React.FC<FaqProps> = ({ faqs = [] }) => {
               <div className="h-px w-full border-b border-celeste px-8" />
               {faqs.map((item, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="font-semibold text-base text-left md:text-xl p-6">
+                  <AccordionTrigger className="font-medium leading-[170%] text-[20px] text-left md:text-xl p-6">
                     {item.pregunta || "Pregunta por defecto"}
                   </AccordionTrigger>
                   <AccordionContent className="pl-4 pr-8 md:pr-16 tracking-wide text-sm md:text-base font-medium">
